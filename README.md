@@ -1,9 +1,8 @@
 asdf
 ====
 
-Initializes [asdf], installing it using git if not installed yet. Also, bypasses
-the shims if you're using the [direnv plugin], as suggested by the plugin
-[pro-tips].
+Initializes [asdf], installing it using git if not installed yet. 
+Unlike the original [zimfw/asdf] this version does not bypass the shims if [direnv plugin] is detected.
 
 Settings
 --------
@@ -53,4 +52,4 @@ system's direnv, that does not depend on asdf to work, it's a much simpler setup
 
 [asdf]: https://github.com/asdf-vm/asdf
 [direnv plugin]: https://github.com/asdf-community/asdf-direnv
-[pro-tips]: https://github.com/asdf-community/asdf-direnv/blob/master/README.md#pro-tips
+[zimfw/asdf]: https://github.com/zimfw/asdf

@@ -19,6 +19,11 @@ fi
 path=(${ASDF_DIR}/bin ${path:#${ASDF_DIR}/bin})
 fpath+=(${ASDF_DIR}/completions(FN))
 
+# Don't add shims directory to the path if direnv plugin is installed
+local asdf_data=${ASDF_DATA_DIR:-${HOME}/.asdf}
+path=(${asdf_data}/shims ${path:#${asdf_data}/shims})
+unset asdf_data
+
 source ${ASDF_DIR}/lib/asdf.sh
 
 # java home support

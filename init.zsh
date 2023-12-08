@@ -24,7 +24,7 @@ local asdf_data=${ASDF_DATA_DIR:-${HOME}/.asdf}
 path=(${asdf_data}/shims ${path:#${asdf_data}/shims})
 unset asdf_data
 
-source ${ASDF_DIR}/lib/asdf.sh
+source ${ASDF_DIR}/asdf.sh
 
 # java home support
 if [[ -e ${ASDF_DIR}/plugins/java/set-java-home.zsh ]]; then
